@@ -1,8 +1,8 @@
 import com.iteso.factory.PozoleStore;
 import com.iteso.factory.Pozole;
-import com.iteso.factory.stores.MenudoStore;
-import com.iteso.factory.stores.PozoleRojoStore;
-import com.iteso.factory.stores.PozoleVerdeStore;
+import com.iteso.factory.factories.MenudoStore;
+import com.iteso.factory.factories.PozoleRojoStore;
+import com.iteso.factory.factories.PozoleVerdeStore;
 
 /**
  * Created with IntelliJ IDEA.

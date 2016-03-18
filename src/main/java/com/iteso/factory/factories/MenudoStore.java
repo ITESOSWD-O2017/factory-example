@@ -1,4 +1,4 @@
-package com.iteso.factory.stores;
+package com.iteso.factory.factories;
 import com.iteso.factory.Pozole;
 import com.iteso.factory.PozoleStore;
 import com.iteso.factory.pozoles.Menudo;
@@ -13,7 +13,7 @@ import com.iteso.factory.pozoles.Menudo;
 public class MenudoStore extends PozoleStore {
 
     @Override
-    protected Pozole createPozole(String meat) {
+    protected Pozole createPozoleFactory(String meat) {
         Pozole pozole = new Menudo();
         return pozole;  //To change body of implemented methods use File | Settings | File Templates.
     }

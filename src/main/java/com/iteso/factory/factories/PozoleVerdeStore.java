@@ -1,4 +1,4 @@
-package com.iteso.factory.stores;
+package com.iteso.factory.factories;
 
 import com.iteso.factory.Pozole;
 import com.iteso.factory.PozoleStore;
@@ -14,7 +14,7 @@ import com.iteso.factory.pozoles.*;
 public class PozoleVerdeStore extends PozoleStore {
 
     @Override
-    protected Pozole createPozole(String meat) {
+    protected Pozole createPozoleFactory(String meat) {
         if (meat.equals("pollo"))
             return new PozoleVerdePollo();
         else if (meat.equals("cachete") )
@@ -25,6 +25,8 @@ public class PozoleVerdeStore extends PozoleStore {
             return new PozoleVerdePierna();
         else if (meat.equals("trompa"))
             return new PozoleVerdeTrompa();
+        else if(meat.equals("camaron"))
+            return new PozoleVerdeCamaron();
         else return null;
 
     }

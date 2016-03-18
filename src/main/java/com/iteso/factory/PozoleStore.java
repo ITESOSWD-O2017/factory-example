@@ -11,7 +11,7 @@ public abstract class PozoleStore {
     public Pozole orderPozole(String meat){
         Pozole pozole;
 
-        pozole = createPozole(meat);
+        pozole = createPozoleFactory(meat);
 
         pozole.prepare();
         pozole.serve();
@@ -19,5 +19,5 @@ public abstract class PozoleStore {
         return pozole;
     }
 
-    protected abstract Pozole createPozole(String meat);
+    protected abstract Pozole createPozoleFactory(String meat);
 }
